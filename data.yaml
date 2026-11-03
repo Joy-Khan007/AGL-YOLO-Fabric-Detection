@@ -1,0 +1,17 @@
+# ==============================================================================
+# AGL-YOLO Fabric Defect Detection Dataset Configuration
+# Dataset: FabricSpotDefect (Spot Defects across Diverse Fabric Substrates)
+# Source: Roboflow Universe (https://universe.roboflow.com/defect-dataset/fabric-defects-2/dataset/18)
+# ==============================================================================
+
+# Dataset directories (adjust paths relative to workspace or Kaggle /content)
+train: ./datasets/FabricSpotDefect/Augmented/YOLOv8/train/images
+val: ./datasets/FabricSpotDefect/Augmented/YOLOv8/valid/images
+test: ./datasets/FabricSpotDefect/Augmented/YOLOv8/test/images
+
+# Number of classes
+nc: 1
+
+# Defect class names
+names:
+  - spot
